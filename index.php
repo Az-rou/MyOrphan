@@ -3,92 +3,86 @@
 <html>
     <head>
         <meta charset="utf-8" />
-       
-        <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css" />
+
         <meta name="viewport" content="width=320" />
         <title>MyOrphan</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
      
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
 
         <link rel="stylesheet" href="MyOrphan.css" />
     </head>
     
     <body>
-    <button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
-<p id="demo">toto</p>
-        <!-- ************************** ********************************************************************************************* -->
-        <!-- ************************** Créé en Php par Nadia Azrou - avril 2022 ***************************************************** -->
-        <!-- ************************** ********************************************************************************************* -->
-        <div id="bloc_page">
-            <header>
-                <div id="titre_principal">
-                    <h1><img src="images/logomyorphan.png" alt="Logo de myorphan" width="100" height="107,67" class="ico_categorie" /></h1>
-                    <div id="logo"> 
-                        <h1>MyOrphan</h1>    
-                    </div>
-                </div>
-                <br>
-                <small>
-                    <nav>
-                        <ul>
-                            <li><a href="MyOrphan.php">Accueil</a></li>
-                            <li><a href="moprojets.php">Projets</a></li>
-                            <li><a href="modon.php">Don</a></li>
-                            <li><a href="moadherent.php">Formulaire</a></li>
-                            <li><a href="moblog.php">Blog</a></li>
-                            <li><a href="#">Connexion</a></li>
-                            <li><a href="mocontact.php" title="page de contact">Contact</a></li>
-                        </ul>
-                    </nav>
-                </small>
-              <br> 
-            </header>
-            
-           <br><br>
 
+    <div class="menus">
 
-                 
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-               
-                  <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                  </ol>
-              
-                 
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <img src="images/enfants1.jpeg" alt="enfants1" style="width:100%;">
-                    </div>
-              
-                    <div class="item">
-                      <img src="images/enfants3.jpeg" alt="enfants3" style="width:100%;">
-                    </div>
-                  
-                    <div class="item">
-                      <img src="images/enfants4.jpeg" alt="enfants4" style="width:100%;">
-                    </div>
-                  </div>
-              
-               
-                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>  
-                <br>
-                
-            <section>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+        <img src="images/logomyorphan.png" alt="Logo de myorphan" class="ico_categorie" style="width:50px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="MyOrphan.php">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="moprojets.php">Projets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="modon.php">Don</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="moblog.php">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="moblog.php">Connexion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mocontact.php" title="page de contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </div>
+
+    <div class="carousel" style="height:350px">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/enfants1.jpeg" class="d-block w-100 ">
+        </div>
+        <div class="carousel-item">
+          <img src="images/enfants3.jpeg" class="d-block w-100 h-100">
+        </div>
+        <div class="carousel-item">
+          <img src="images/enfants4.jpeg" class="d-block w-100">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div>
+
+            <section class="article-section">
                 <article>
                     <h2>&nbsp;<img src="images/main.jpeg" alt="Logo de main enfant" width="80" height="80" class="ico_categorie" />Je suis un enfant du monde &nbsp;&nbsp;<img src="images/main.jpeg" alt="Logo de main enfant" width="80" height="80" class="ico_categorie" /></h2>
                     <p>Fondée en 2019, l'Association <strong>MY ORPHAN </strong>est une association non lucrative de solidarité internationnale à vocation sociale et humanitaire agissant dans le dommaine de l'assistance humanitaire et de l'aide aux développement de l'enfant en France et dans le monde.</p>
@@ -110,7 +104,11 @@ Click me to display Date and Time.</button>
                 </aside>
                
             </section>
-            
+
+            <div class="separateur-footer-article">
+                <hr>
+            </div>
+
             <footer>
                 <div id="tweet">
                     <h1>MY Orphan</h1>

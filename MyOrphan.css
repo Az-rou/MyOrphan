@@ -73,7 +73,7 @@ header
 #logo img
 {
     width: 100px;
-    height: 100px; 
+    height: 100px;
 }
 
 header h1
@@ -93,18 +93,18 @@ header h2
 }
 /* Navigation */
 
-nav ul
+.navigation-menu ul
 {
     list-style-type: none;
     display: flex;
 }
 
-nav li
+.navigation-menu li
 {
     margin-right: 15px;
 }
 
-nav a
+.navigation-menu a
 {
     font-size: 1.3em;
     color: #181818;
@@ -112,7 +112,7 @@ nav a
     text-decoration: none;
 }
 
-nav a:hover
+.navigation-menu a:hover
 {
     color: #760001;
     border-bottom: 3px solid #760001;
@@ -127,7 +127,7 @@ nav a:hover
     border-radius: 5px;
     /*background: url('images/sanfrancisco.jpg') no-repeat; */
     background: url('images/garden-food-arras-4.png') no-repeat;
-    
+
     position: relative;
     box-shadow: 0px 4px 4px #1c1a19;
     margin-bottom: 25px;
@@ -144,7 +144,7 @@ nav a:hover
     padding-left: 4px;
     background-color: rgba(24,24,24,0.8);
     color: white;
-    font-size: 0.8em;   
+    font-size: 0.8em;
 }
 
 .bouton_rouge
@@ -237,7 +237,6 @@ aside img
 footer
 {
     display: flex;
-    background:  url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
     padding-top: 25px;
 }
 
@@ -301,19 +300,19 @@ footer h1
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
 @media screen and (max-width: 1280px)
 {
-    
+
 }
 
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
 @media all and (min-width: 1024px) and (max-width: 1280px)
 {
-    
+
 }
 
 /* Sur les téléviseurs */
 @media tv
 {
-    
+
 }
 
 
@@ -322,7 +321,7 @@ footer h1
 {
     p
     {
-       /* color: red; 
+       /* color: red;
         background-color: black;*/
         font-size: 1.2em;
     }
@@ -349,7 +348,7 @@ footer h1
         width: auto;
         text-align: left;
     }
-    
+
     nav ul
     {
         flex-direction: column;
@@ -364,12 +363,12 @@ footer h1
     {
         padding-left: 4px;
     }
-    
+
     nav a
     {
         font-size: 1.1em;
     }
-    
+
     nav a:hover
     {
         border-bottom: 0;
@@ -396,23 +395,35 @@ footer h1
         width: auto;
         margin-bottom: 15px;
     }
-    
+
     #fleche_bulle
     {
         display: none;
     }
-    
+
     #photo_Nadia img
     {
         width: 110px;
         float: right;
         margin-left: 15px;
     }
-    
+
     aside p:last-child
     {
         text-align: center;
     }
+}
+
+.article-section{
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 33px;
+}
+.separateur-footer-article {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media all and (max-device-width: 480px)
