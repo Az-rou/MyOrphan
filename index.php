@@ -2,57 +2,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
-
-        <meta name="viewport" content="width=320" />
         <title>MyOrphan</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
-     
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
-
-        <link rel="stylesheet" href="MyOrphan.css" />
+        <?php include('composant/header.html')?>
     </head>
     
     <body>
 
     <div class="menus">
-
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-        <img src="images/logomyorphan.png" alt="Logo de myorphan" class="ico_categorie" style="width:50px" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="MyOrphan.php">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="moprojets.php">Projets</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="modon.php">Don</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="moblog.php">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="moblog.php">Connexion</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mocontact.php" title="page de contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    </div>
-
+        <?php include('composant/menu.html');?>
+    <div>
     <div class="carousel" style="height:350px">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
       <div class="carousel-indicators">
