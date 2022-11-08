@@ -1,46 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="UTF-8">
-      
-        <link rel="stylesheet" href="MyOrphan.css" />
-        <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css" />
- 
-       
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
-
         <title> Contact </title>
-       <!-- <link rel="stylesheet" href="contact2.css"> -->
+        <?php include('composant/header.html');?>
     </head>
     <body>
 
+    <div class="menus">
+        <?php include('composant/menu.html');?>
+    <div>
+
     <div id="bloc_page">
-            <header>
-                <div id="titre_principal">
-                    <h1><img src="\MyOrphan\images\logomyorphan.png" alt="Logo de myorphan" width="100" height="107,67" class="ico_categorie" /></h1>
-                    <div id="logo"> 
-                        <h1>MyOrphan</h1>    
-                    </div>
-                </div>
-                <br>
-                <small>
-                    <nav>
-                        <ul>
-                            <li><a href="MyOrphan.php">Accueil</a></li>
-                            <li><a href="moprojets.php">Projets</a></li>
-                            <li><a href="modon.php">Don</a></li>
-                            <li><a href="moadherent.php">Formulaire</a></li>
-                            <li><a href="mobenevole.php">Bénévole</a></li>
-                            <li><a href="moblog.php">Blog</a></li>
-                           
-                        </ul>
-                    </nav>
-                </small>
-              <br> 
-            </header>
-        <br><br>
-        <center> <h1>Contactez-nous </h1></center>
-        <p>Pour toute demande remplissez le formulaire ci-dessous.</p>
+        <div class="nos-valeurs text-center mt-2 mb-5">
+            <br><br>
+            <h1>Contactez-nous</h1>
+            <h4>-*-*-*-*-*-</h4>
+            <p>Pour toute demande remplissez le formulaire ci-dessous.</p>
+        </div>
         <form method="post">
             <label>Nom :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
             <input type="text" name="nom" required><br><br>
@@ -53,8 +29,9 @@
             <input type="submit" value="Envoyer le message">
         </form>
 
+
         <br><br>
-        <center><img src="\MyOrphan\images\moplan.jpg" alt="plan de myorphan" /></center>
+        <center><img src="images/map.png" alt="plan de myorphan" /></center>
         <center><p>Adresse : 8 Ter Rue d'Alsace, 59370 Mons-en-Barœul, France</p></center><br>
         <center>******************* Tous droits réservés -avril 2022 *******************</center>
         <br><br>
@@ -75,5 +52,7 @@
         }
 
         ?>
+        
+
     </body>
 </html>
