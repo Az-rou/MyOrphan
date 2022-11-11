@@ -426,6 +426,10 @@ footer h1
     margin-right: auto;
 }
 
+.orphan-carousel-item{
+    height: 800px;
+}
+
 @media all and (max-device-width: 480px)
 {
     /* Vos règles CSS pour les mobiles ici */
