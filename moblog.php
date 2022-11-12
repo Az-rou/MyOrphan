@@ -62,6 +62,8 @@
 
 </div>
 
+
+<?php include ("composant/js.html")?>
 </body>
 
 
